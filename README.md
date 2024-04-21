@@ -11,12 +11,21 @@ npm install react-native-movies-sdk
 ## Usage
 
 ```js
-import { multiply } from 'react-native-movies-sdk';
+import { fetchMovie } from 'react-native-movies-sdk';
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await fetchMovie("Movie-Name");
 ```
+It returns the list movies, based on the searchQuery, for each movie in the list you will get:
+
+- Movie Name
+- Movie Type
+- Movie Poster
+- Year
+- IMDB ID
+
+Api used for this module is omdbapi.
 
 ## Contributing
 
